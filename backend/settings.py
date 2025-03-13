@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-^&z01f*v0yp__u6)i(9vr@9@@z7d_upv^z#4!%_8u6$+jmpwo3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'yannisnzueessono']
 
 load_dotenv()
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")

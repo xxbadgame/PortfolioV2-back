@@ -9,10 +9,8 @@ def chat_view(request):
     serializer = ChatSerializer(data=request.data)
     if serializer.is_valid():
         message = serializer.validated_data['data']
-        print("Received data:", message)
-
         mistral_service = ApiService()
-        agent_id = "ag:99d3226f:20250217:yannis-ai:b898b739"
+        agent_id = "ag:99d3226f:20250217:yannis-ai:cfd93f55"
         response = mistral_service.get_chat_response(agent_id, message)
         return Response({'responseYAI': response}, status=status.HTTP_200_OK)
     
